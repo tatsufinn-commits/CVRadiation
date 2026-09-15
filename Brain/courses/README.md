@@ -1,8 +1,12 @@
-# `Brain/courses/` — private study corpus (RADIATION v1.0.0)
+# `Brain/courses/` — study corpus (RADIATION v1.0.0)
 
-This region holds the Commander's enrolled-course material in a **private**
-repository. Rules rewritten (M-013) from the pinned v3 corpus policy; v3
-validator machinery was not imported.
+This region holds the Commander's enrolled-course material. **The repository is
+public during development by explicit Commander decision (2026-09-15).** Public
+visibility is a custody choice, not a rights clearance: everything here is
+retained for the Commander's **personal study**, is **not** represented as
+public-domain or redistribution-permitted, and the Commander is responsible
+for visibility and storage authorization. Rules are rewritten (M-013) from the
+pinned v3 corpus policy; v3 validator machinery was not imported.
 
 ## Contract
 
@@ -14,12 +18,16 @@ validator machinery was not imported.
 2. **Markdown derivatives are the normal AI-readable layer.** Source binaries
    (PDF/DOCX/HTML) are fidelity sources, loaded on demand when explicitly
    tasked; never re-hosted or redistributed.
-3. **Private only.** Third-party school assets (syllabi, calendars, class
-   schedules) are retained for the Commander's personal study under the
-   Commander's authorization (decision D4, 2026-09-15). A checksum is not a
-   permission grant; nothing here marks redistribution rights.
-4. **Personal data.** Timetables and the calendar feed contain rooms,
-   sections, and class times. They live only in the private repository.
+3. **No redistribution claim.** Third-party school assets (syllabi,
+   calendars, class schedules) are retained for the Commander's personal study
+   under the Commander's authorization (D4, 2026-09-15; full-migration
+   directive, 2026-09-15). A checksum is not a permission grant; nothing here
+   marks redistribution rights, and public visibility does not create any.
+4. **Personal data, accepted visibility.** Timetables and the calendar feed
+   contain rooms, sections, and class times. The Commander has knowingly
+   accepted their visibility in the public-during-development repository; the
+   AI never republishes them elsewhere and cannot change repository
+   visibility.
 5. **On demand.** Load corpus derivatives when the study task needs them; do
    not treat them as truth about a subject — a syllabus says what is
    examinable, not what is true.

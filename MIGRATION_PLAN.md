@@ -1,5 +1,59 @@
 # MIGRATION PLAN — RADIATION v1.0.0
 
+> **SUPERSESSION NOTICE (2026-09-15, full public migration directive).** The
+> original D1–D6 plan below (private-target plan, 63 M-IDs) is superseded for
+> the TARGET and ARCHIVE decisions: the target is **public CVRadiation**
+> (`8d2dba8`) during development by Commander decision; all 835 pinned blobs
+> are preserved as the **inert archive** `legacy/RADIATION_v3_fbce71b/`; the
+> small v1 layer remains active at root. All other governance stands
+> (no source execution, no AI push, placeholders/deferred model layer, no
+> carrier artifacts in the active layer). See **Part II** below for the
+> archive-migration plan and operation list. The historical Part I rows are
+> retained as the decision record for the active v1 content that ships.
+
+---
+
+# PART II — Full public archive migration (directive 2026-09-15)
+
+## A. Architecture
+
+```text
+active v1:  README.md · VERSION · MIGRATION_* (×4) · agents/ · docs/ (×5) · Brain/courses/
+inert:      legacy/RADIATION_v3_fbce71b/  (835 exact blobs; .gitignore/.gitattributes renamed)
+```
+
+The active layer never invokes the archive as boot/authority; see
+`docs/LEGACY_BOUNDARY.md`. Archived workflows stay nested (no root
+`.github/`); archived code is never executed.
+
+## B. New plan rows (Phase A — local only, no commit/push)
+
+| ID | Item | Action | Verification | Decision |
+|---|---|---|---|---|
+| M-100 | All 835 blobs @ `fbce71b` → `legacy/RADIATION_v3_fbce71b/` | Keep (inert archive) | per-file git blob SHA-1 vs source tree; target sha256 recorded; 835/835 exact | DIRECTIVE |
+| M-101 | `.gitignore`, `.gitattributes` | Rename to `DOT_gitignore.archived`, `DOT_gitattributes.archived`; byte-equal | only two renames; byte equality in manifest | DIRECTIVE |
+| M-102 | `MIGRATION_ARCHIVE_MANIFEST.json` | New, 835 entries | counts 835 source / 835 archived; no missing/extra | PHASE A PRODUCED |
+| M-103 | `docs/LEGACY_BOUNDARY.md` | New | states inert-data rule, no execution/boot, no authority flow, two renames | PHASE A PRODUCED |
+| M-104 | 80 hybrid scaffold paths at active root (§3 families) | Remove from active layer AFTER archive verified | every removed path exists in archive; active count matches design | PHASE A PRODUCED |
+| M-105 | Root `README.md` | Rewrite (old v3 file removed) | no OS/scan/mode/skill claims; no activation link to old repo; truthful public status; does not present archive as active | PHASE A PRODUCED |
+| M-106 | Active docs/index/corpus wording | Rewrite to truthful public-development status; retain no-redistribution labels; `agents/INDEX.md` no longer implies a live `RESEARCH_METHOD.md` | text review; corpus manifest 20/20 re-hashed after edits; 18 shared files still blob-exact | PHASE A PRODUCED |
+| M-107 | Group D public-push event | One honest log line (initial corpus reached public `8d2dba8` before explicit decision; directive now makes it explicit) | present in MIGRATION_LOG.md | DIRECTIVE |
+| M-108 | Red old `main` (`e206375`) and named carrier commits | Exclude | not checked out; archive contains only `fbce71b` content | ENFORCED |
+| M-109 | Commit / push | **Not performed in Phase A** | working tree only; no new commit; Commander gate phrase required | STOP-GATE |
+
+## C. Stop-gate
+
+Phase A delivers the prepared tree, the 835-entry manifest, the operation
+report, and the integrity proof. Nothing is committed or pushed until the
+Commander says exactly: **`Approve full v1 archive migration`**. The
+Commander then reviews and performs the push; Phase C verifies on a fresh
+clone.
+
+---
+
+# PART I — Original v1 plan (decision record for active-layer content)
+
+
 **Plan date:** 2026-09-15 (Asia/Singapore)  
 **Planner:** new AI (migration analyst; not an autonomous publisher)  
 **Status:** APPROVED FOR PHASE 2 BUILD (Commander, in-session decisions 2026-09-15). See §0.

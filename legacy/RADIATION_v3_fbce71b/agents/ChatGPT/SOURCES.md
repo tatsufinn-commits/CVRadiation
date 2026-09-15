@@ -1,0 +1,27 @@
+# SOURCES — ChatGPT / OpenAI
+All items retrieved **2026-09-14** by the S005 session web sweep. Tiers: **[O]**fficial primary · **[S]**econdary dated coverage · **[U]**ser-reported · **[B]**enchmark.
+
+| Area | Source | Tier | Published / verified |
+|---|---|---|---|
+| Zero Data Retention; API data not used for training without opt-in; Private Safety Processing | https://openai.com/index/offering-zero-data-retention-for-frontier-models/ | [O] | 2026-08-19 |
+| Official pricing page (canonical — verify current rates) | https://openai.com/api/pricing | [O] | canonical, re-verify on use |
+| Platform/model docs (canonical) | https://platform.openai.com/docs | [O] | canonical, re-verify on use |
+| Enterprise privacy: fine-tuned models private; API no-training default | OpenAI enterprise-privacy page (quoted via https://medium.com/@mikehpg/…, 2025-03-30) | [O]-via-[S] | 2025-03-30 (reverify at source) |
+| Retention story: 30-day abuse logs; consumer/API split; NYT order lifted 2025-09-26 | https://humla.team/blog/openai-data-retention-policy | [S] | 2026-07-28 |
+| Price tables: GPT-5.4 $2.50/$15; GPT-4.1 family; batch −50%; cached-input discounts | https://zylo.com/blog/openai-api-pricing | [S] | 2026-08-13 |
+| Price tables: GPT-5.5 $5/$30; o3 $2/$8; o4-mini $0.55/$2.20; 200K contexts | https://www.metacto.com/blogs/unlocking-the-true-cost-of-openai-api-a-deep-dive-into-usage-integration-and-maintenance | [S] | 2026-06-11 |
+| Operational status (canonical) | https://status.openai.com | [O] | canonical, check live |
+
+**Conflicts/gaps:** aggregator rates vary by crawl date — official page wins. Consumer-ChatGPT training default [S, humla 2026-07-28] should be confirmed against OpenAI's own consumer policy page before quoting.
+
+**5500 gate-review additions (2026-09-14):**
+
+| Official model catalog (exact IDs: gpt-6-astra, gpt-5.6-terra, gpt-5.6-luna; 1.05M ctx) | https://developers.openai.com/api/docs/models | [O] | retrieved 2026-09-14 (gate-review sweep) |
+| Official business/API pricing | https://openai.com/business/pricing/#api | [O] | retrieved 2026-09-14 (gate-review sweep) |
+
+**5820 Compliance Refresh additions (2026-09-15):**
+
+| Official US privacy policy — Updated 2026-09-10; consumer vs API split: privacy policy does NOT apply to API business offerings (governed by customer agreements) | https://openai.com/policies/privacy-policy | [O] | retrieved 2026-09-15 — receipt O15 |
+| Official usage policies — Effective 2026-10-29; universal set; protect people, respect privacy, keep minors safe, empower people; no high-stakes automation without human review | https://openai.com/policies/usage-policies | [O] | retrieved 2026-09-15 — receipt O16 |
+| Official API data controls — Your data is your data; API not used for training by default since Mar 1 2023; abuse monitoring logs up to 30 days; ZDR and Modified Abuse Monitoring eligible with approval | https://developers.openai.com/api/docs/guides/your-data | [O] | retrieved 2026-09-15 — receipt O17 |
+

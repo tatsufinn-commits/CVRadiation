@@ -1,9 +1,13 @@
 # AGENT INDEX — RADIATION v1.0.0
 
-Provider-facing routing for runtimes that have already opened this
-repository. Rewritten from pinned `agents/AGENT_INDEX.md` (M-004) with the
-research method from `agents/RESEARCH_METHOD.md` (M-010); v3 scripts and the
-routing matrix were not imported.
+Provider-facing routing for runtimes that have already opened **this**
+repository. Rewritten for v1 (M-004) from the pinned historical profile index;
+the evidence-tier research method (M-010) is embedded below rather than carried
+as a separate file. Historical sources, including the old
+`agents/RESEARCH_METHOD.md`, exist only inside the inert archive at
+`legacy/RADIATION_v3_fbce71b/agents/` (see `docs/LEGACY_BOUNDARY.md`); they are
+not live v1 files and grant nothing. v3 scripts and the routing matrix were not
+imported into the active layer.
 
 ## The routing rule
 

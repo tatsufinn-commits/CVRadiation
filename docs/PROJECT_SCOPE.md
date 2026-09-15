@@ -1,11 +1,22 @@
 # PROJECT SCOPE — RADIATION v1.0.0
 
-**Date:** 2026-09-15 · **Status:** Commander-approved baseline (decision D3)
+**Date:** 2026-09-15 · **Status:** Commander-approved baseline (D3); public-during-development status and full historical archive approved by directive of 2026-09-15
+
+## Visibility
+
+This repository is **public during development by Commander decision**.
+Course material is retained for the Commander's personal study; public
+visibility is not a copyright, public-domain, or redistribution claim, and the
+Commander remains responsible for visibility and storage authorization. The AI
+cannot change repository visibility or publish; the Commander performs every
+push.
 
 ## Purpose
 
-RADIATION v1 is a practical, **private, study-first** study-assistant
-repository for the Commander's enrolled courses. It exists to:
+RADIATION v1 is a practical, study-first study-assistant repository for the
+Commander's enrolled courses, supplemented by an inert historical archive
+(`legacy/RADIATION_v3_fbce71b/`, governed by `docs/LEGACY_BOUNDARY.md`). It
+exists to:
 
 - hold the Commander's course digests, syllabi, calendars, and schedules;
 - answer, organize, and drill study questions from that corpus on demand;
@@ -33,10 +44,17 @@ repository for the Commander's enrolled courses. It exists to:
   Commander decision D5.
 - **No governance apparatus.** No control-plane relay, task receipts/evidence
   bundles, validators, shrine, or patch-ledger workflow (M-057/M-058/M-061).
-- **No redistribution.** The study corpus stays private; third-party school
-  assets are never republished (M-027…M-033).
+- **No redistribution claim.** Course material is personal-study material;
+  public-during-development visibility does not grant redistribution rights,
+  and the no-redistribution labels on third-party school assets stand
+  (M-027…M-033; manifest per-file).
 - **No credential handling.** Calendar feeds are stored data; feed secrets and
-  tokens stay out of the tree. CI with credentials is excluded (M-057).
+  tokens stay out of the tree. CI with credentials is excluded from the active
+  layer (M-057). Archived workflows under `legacy/` are inert data, never
+  wired to run.
+- **No archive authority.** The 835-file legacy snapshot is historical data
+  only; it never boots, executes, or supplies active rules (see
+  `docs/LEGACY_BOUNDARY.md`).
 - **No legal/compliance conclusions.** Provider policy notes are dated research
   or say "not yet verified"; nothing here is a legal opinion.
 

@@ -1,30 +1,44 @@
-# RADIATION v1.0.0
+# RADIATION v1.0.0 — CVRadiation
 
-**A clean-line, private, study-first repository.**
+**A clean-line, study-first repository, public during development by Commander decision.**
 
-> - **RADIATION v1.0.0 is a clean-line, private, study-first repository.**
-> - **The old RADIATION v3 repository is a read-only reference, not an automatic import source.**
+> - **RADIATION v1.0.0 is a clean-line, study-first repository.**
+> - **The old RADIATION v3 repository is a read-only historical reference, not an automatic import source and not an authority for v1.**
 > - **No provider/model claim grants runtime access or authority.**
-> - **The Commander approves material imports and performs pushes.**
+> - **The Commander approves material imports, visibility decisions, and every push.**
 
-RADIATION v1 is a small personal study assistant, started clean at v1.0.0. It
-is not a copy of the old v3 system and does not claim that v3 content was all
-correct. It contains four things:
+## Visibility status (truthful statement)
 
-1. **A provider-facing index** (`agents/`) — one folder per supported AI
-   runtime, with an honest routing rule and placeholder profiles.
-2. **A bounded PASS handoff** (`docs/PASS_HANDOFF.md`) — a context card that
-   states available context, tools, task boundary, stop-lines, and verification
-   steps. It grants no access or authority.
-3. **A private study corpus** (`Brain/courses/`) — the Commander's enrolled
-   courses, schedules, and syllabus materials, imported item-by-item under a
-   hash-and-permission manifest.
-4. **Migration provenance** (`MIGRATION_SOURCES.md`, `MIGRATION_PLAN.md`,
-   `MIGRATION_LOG.md`) — exactly where everything came from and who approved it.
+This repository is **public during development by Commander decision**
+(2026-09-15). Course material under `Brain/courses/` is retained for the
+Commander's **personal study**; being publicly visible is **not** a claim that
+the material is public-domain or redistribution-permitted. The Commander is
+responsible for repository visibility and storage authorization; the AI cannot
+change visibility or publish. See `Brain/courses/COURSE_CORPUS_MANIFEST.json`
+and `MIGRATION_LOG.md`.
+
+## What this repository is
+
+A small personal study assistant started clean at v1.0.0 — not a fork of the
+old v3 system and not a claim that v3 content was correct:
+
+1. **A provider-facing index** (`agents/`) — one folder per supported runtime,
+   with an observed-host routing rule and honest placeholder profiles.
+2. **A bounded PASS handoff** (`docs/PASS_HANDOFF.md`) — a context card stating
+   available context, tools, task boundary, stop-lines, and verification. It
+   grants no access or authority.
+3. **A study corpus** (`Brain/courses/`) — the Commander's enrolled courses,
+   schedules, and syllabus materials, itemized in a hash-and-permission
+   manifest.
+4. **An inert historical archive** (`legacy/RADIATION_v3_fbce71b/`) — an exact
+   byte-for-byte snapshot of the accepted old commit, preserved as historical
+   data only. Never execute or boot from it; see `docs/LEGACY_BOUNDARY.md`.
+5. **Migration provenance** (`MIGRATION_SOURCES.md`, `MIGRATION_PLAN.md`,
+   `MIGRATION_LOG.md`, `MIGRATION_ARCHIVE_MANIFEST.json`).
 
 ## Quickstart (magic words, v1)
 
-Paste into an AI runtime that already has the repository open:
+Paste into an AI runtime that already has **this** repository open:
 
 ```text
 Read this repository, and act as per docs/.readme
@@ -38,35 +52,28 @@ expected, not a bug.
 ## Layout
 
 ```text
-RADIATION-v1/
-├── README.md                 # you are here
-├── VERSION                   # exactly: v1.0.0
-├── MIGRATION_SOURCES.md      # what was inspected, what was excluded
-├── MIGRATION_PLAN.md         # row-by-row migration decisions (63 M-IDs)
-├── MIGRATION_LOG.md          # import ledger: source, hash, reason, privacy, approval
-├── agents/                   # provider-facing index
-│   ├── INDEX.md
-│   ├── ChatGPT/README.md · Gemini/README.md · Grok/README.md
-│   ├── Claude/README.md · Arena_AI/README.md
-├── docs/
-│   ├── .readme               # AI entry gate
-│   ├── PROJECT_SCOPE.md      # what v1 is and is not
-│   ├── PASS_HANDOFF.md       # bounded context-handoff card
-│   └── RELEASE_CHECKLIST.md  # the only release process v1 has
-└── Brain/courses/            # PRIVATE study corpus + COURSE_CORPUS_MANIFEST.json
+CVRadiation/
+├── README.md · VERSION · MIGRATION_SOURCES.md · MIGRATION_PLAN.md
+├── MIGRATION_LOG.md · MIGRATION_ARCHIVE_MANIFEST.json
+├── agents/                   # INDEX.md + ChatGPT/ Gemini/ Grok/ Claude/ Arena_AI/ placeholders
+├── docs/                     # .readme, PROJECT_SCOPE, PASS_HANDOFF, RELEASE_CHECKLIST, LEGACY_BOUNDARY
+├── Brain/courses/            # active study corpus + COURSE_CORPUS_MANIFEST.json
+└── legacy/RADIATION_v3_fbce71b/   # 835-file inert historical archive; never executed or booted
 ```
+
+The active layer deliberately contains no autonomous scan, cue engine, legacy
+boot sequence, mode system, patch protocol, or executable old runtime. Those
+exist only as archived history under `legacy/`.
 
 ## Authority model
 
-- The Commander (repository owner) approves material scope changes, imports,
-  and every push. The AI drafts and verifies; it does not commit, push, invite
-  collaborators, deploy, route, call providers with credentials, or upload
-  material without an explicit, task-bound order.
+- The Commander approves scope changes, corpus items, visibility, and every
+  push. The AI drafts and verifies; it does not commit, push, invite
+  collaborators, deploy, route, use credentials, or call providers without an
+  explicit, task-bound order.
 - Silence, praise, a prior session, or "we are not done yet" is never standing
   approval.
-- Claims about providers, policies, models, privacy, or security carry a dated
-  source for the relevant surface, or are labelled **not yet verified**.
-- Study material lives only in the private repository. No corpus file is
-  republished.
+- Provider, policy, model, privacy, and security claims carry a dated source
+  for the relevant surface, or read **not yet verified**.
 
 Version v1.0.0 means "clean baseline", not "all old features reimplemented".

@@ -31,7 +31,7 @@ unobserved items as unknowns on the `docs/PASS_HANDOFF.md` card.
 Per the method in `agents/INDEX.md`: a fresh dated web sweep; [O]/[S]/[U]/[B]
 source tiers; conflicts kept as conflicts; declared gaps for missing official
 privacy/terms/pricing/status surfaces; surfaces and region never guessed; a
-review date on every volatile claim; no routing or legal conclusions. The old
-pinned v3 profile/source triad exists at RADIATION@fbce71b `agents/Gemini/`
-and may be read as reference data in that future task — not copied without
-revalidation.
+review date on every volatile claim; no routing or legal conclusions. The historical v3 profile/source triad is preserved as inert archive data at
+`legacy/RADIATION_v3_fbce71b/agents/Gemini/` (see docs/LEGACY_BOUNDARY.md) and may be
+read as reference in that future task — never executed, never a live v1
+claim, and not copied without revalidation.

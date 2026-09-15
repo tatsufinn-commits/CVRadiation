@@ -1,5 +1,14 @@
 # MIGRATION LOG — RADIATION v1.0.0
 
+> **VISIBILITY SUPERSESSION (2026-09-15):** rows 1–35 below were written under
+> the earlier private-target decision and classify corpus items as *private*;
+> the full public migration directive of 2026-09-15 superseded target D1/D2 —
+> CVRadiation is **public during development by Commander decision** and the
+> honest visibility event is recorded in **section E**. The rows below are
+> retained unedited as the provenance record of how the files were produced;
+> current visibility/redistribution wording in the active docs and
+> `Brain/courses/COURSE_CORPUS_MANIFEST.json` governs present state.
+
 Every imported or rewritten item is recorded with the six required fields:
 **source path · source SHA (commit + blob; sha256 for binaries) · date · reason
 · privacy classification · Commander approval reference** (plus action and
@@ -78,3 +87,61 @@ per-item), M-040…M-055 (deferred past v1.0.0 by D5), M-056…M-063 (v3 machine
 evidence, scaffolding, modes/cue/styles/subskills, bulk docs, schemas, history;
 excluded by D6), and every §2.3 carrier family (zero found at the pinned
 snapshot; fail-closed scan repeated in the release checklist).
+
+
+---
+
+## E. Full public archive migration — directive 2026-09-15 (supersedes private-target D1)
+
+**Visibility event (honest one-line record, directive §5):** the initial Group
+D course corpus was pushed to CVRadiation commit `8d2dba8` on 2026-09-15
+**while the target repository was public**, before an explicit public-corpus
+decision was on record; the full-public-migration directive of 2026-09-15 now
+makes public-during-development the Commander's explicit, informed decision.
+This entry does not claim the historical public exposure was impossible or
+harmless — public history, caches, and forks may persist; the Commander owns
+visibility and storage authorization; the AI cannot change visibility or
+publish. Personal-study / no-redistribution labels remain on all course
+material.
+
+| v1 path / item | Action | Source @ SHA | Date | Verification | Decision |
+|---|---|---|---|---|---|
+| `legacy/RADIATION_v3_fbce71b/` (835 files) | Inert archive copy | RADIATION@`fbce71bbfe4c62da71e6b347d36617474f840297` (tree `c8d85e7c…`) | 2026-09-15 | 835/835 git blob SHA-1 equality; target sha256 recorded; zero omissions/extras; nothing executed | DIRECTIVE (M-100) |
+| `legacy/…/DOT_gitignore.archived` | Renamed from `.gitignore`; byte-equal | source blob `f55ea901808b0173c5e122a40e7edc35fdd173cd` | 2026-09-15 | sha1/sha256 in archive manifest | DIRECTIVE (M-101) |
+| `legacy/…/DOT_gitattributes.archived` | Renamed from `.gitattributes`; byte-equal | source blob `dfe0770424b2a19faf507a501ebfc23be8f54e7b` | 2026-09-15 | sha1/sha256 in archive manifest | DIRECTIVE (M-101) |
+| `MIGRATION_ARCHIVE_MANIFEST.json` | New | v1-generated map of all 835 source blobs | 2026-09-15 | entry count 835; two rename notes only; every archive file listed once | PHASE A (M-102) |
+| `docs/LEGACY_BOUNDARY.md` | New | v1-authored | 2026-09-15 | inert-data rules; no execute/boot/authority flow | PHASE A (M-103) |
+| 80 hybrid scaffold paths at active root (phase dirs, cue/, scaffolding/, styles/, subskills/, Brain lobes, v3 docs, BOOT_SEQUENCE/PROTOCOL/VERSIONING_GUIDE/BRAIN_INDEX) | Removed from active layer | preserved under `legacy/RADIATION_v3_fbce71b/` | 2026-09-15 | each removed file verified present in archive before deletion; working-tree deletions only, no commit | PHASE A (M-104) |
+| `README.md` (root) | Rewritten | replaced the v3 scaffold README (old version preserved in archive) | 2026-09-15 | no OS/mode/scan/old-repo-activation claims; truthful public status | PHASE A (M-105) |
+| `docs/.readme`, `PROJECT_SCOPE.md`, `PASS_HANDOFF.md`, `RELEASE_CHECKLIST.md`; `agents/INDEX.md` + 5 placeholders; `Brain/courses/README.md`, `INDEX.md`, `COURSE_CORPUS_MANIFEST.json`; `MIGRATION_SOURCES.md`, `MIGRATION_PLAN.md` | Truthful public-state rewrites | v1-authored; corpus bytes unchanged | 2026-09-15 | 18 shared corpus files still blob-exact vs `fbce71b`; active manifest 20/20 hash match; no live `RESEARCH_METHOD.md` implication; placeholders still claim nothing | PHASE A (M-106/M-107) |
+| Commit / push | **Not performed** | — | 2026-09-15 | no new commit exists locally; awaiting exact phrase `Approve full v1 archive migration`; Commander pushes | STOP-GATE (M-109) |
+
+**Earlier private-target entries (sections A–D) remain as the historical record
+of how the active v1 files were produced; D1/D2 were superseded by the
+2026-09-15 directive, not retroactively erased.**
+
+
+### Pre-push archive content scan (2026-09-15, Phase A)
+
+- 0 private keys / AWS keys / token assignments / auth headers; 0
+  credentialed calendar-feed URLs in the 835 archived blobs (the historical
+  `4a98e59` feed secret is absent; this target carries no old git history).
+- 12 personal Google Drive `?usp=sharing` folder links found in archived
+  `Brain/external_sources/*.md` and one in `Brain/cerebellum/toolbox.md`;
+  same template in archived `scripts/ingest_collection.py`. Gate decision
+  required: accept exact (option 1) or Commander-ordered redaction, which
+  would make affected archive files `copied-redacted` with manifest-declared
+  deviations (option 2). No redaction performed in Phase A.
+
+### Phase B approval (2026-09-15, Asia/Singapore)
+
+Commander instruction received verbatim: **"proceed to phase B, however,
+change your .zip patch name every time you finish a new one!"** — taken as the
+directive's Phase B approval for preparing the approved commit **locally**;
+push remains the Commander's motor act. No redaction order was given for the
+12 archived Google Drive share links, and the directive requires an exact
+archive; therefore **gate option 1 stands: the 835-file archive is published
+byte-exact (`copied-exact`), Drive links included**. The Commander holds the
+final pre-push gate and may still order redaction. A uniquely timestamped zip
+package is produced outside the repository at each phase completion; zip
+files never enter the active layer.

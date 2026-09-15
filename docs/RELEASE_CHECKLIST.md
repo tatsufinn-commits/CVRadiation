@@ -20,25 +20,39 @@ not imported (M-014).
 - [ ] Rewritten files were visually checked against their named source blobs;
       copied files match their blob SHA / declared hashes.
 
-## 3. Privacy check for study materials
+## 3. Visibility and study-materials check (public during development)
 
-- [ ] The target remote is confirmed **private** before `Brain/courses/`
-      content is pushed (D2 gate).
+- [ ] The Commander has **explicitly reconfirmed**, at each corpus push, that
+      CVRadiation is public during development and accepts that the listed
+      course files (incl. PDF/DOCX/HTML and personal timetable/feed) become
+      part of public history; the AI cannot change visibility or publish.
 - [ ] `COURSE_CORPUS_MANIFEST.json` lists every file under `Brain/courses/`
-      with matching sha256, and nothing exists there unlisted.
+      with matching sha256, and nothing exists there unlisted; every entry
+      carries personal-study / no-redistribution labels.
 - [ ] Third-party school assets carry the Commander's storage authorization
-      (D4, 2026-09-15); nothing is marked redistribution-permitted.
+      (D4, 2026-09-15; full-migration directive, 2026-09-15); nothing is
+      marked redistribution-permitted, and public visibility is recorded as a
+      Commander responsibility, not a rights clearance.
 - [ ] No credentials, tokens, or secret URLs: the calendar feed has been
-      scanned; the LMS feed-credential rotation (P4) is confirmed closed.
+      scanned; the LMS feed-credential rotation (P4) status is stated
+      truthfully at push time (removing a URL does not revoke it).
+- [ ] The Commander acknowledges public history is not reliably erased
+      (caches/forks) — visibility decisions are taken before push, not after.
 
 ## 4. No forbidden carrier or patch files
 
 - [ ] Fail-closed scan finds none of: `APPLY.sh`, `APPLY.ps1`, `*.zip`,
       `RADIATION_PATCH_*`, `PATCH.diff`, `*_DIFF*`, `append-blocks/`,
       `append_blocks/`, `*_STAGED*`, `*_REPLACEMENT*`, delivery reports, the
-      5824 Release Truth Gate, or P-11/55%-claim artifacts.
-- [ ] No v3 executable machinery (`scripts/`, `radiation_core/`, workflows,
-      relays) is present.
+      5824 Release Truth Gate, or P-11/55%-claim artifacts **in the active
+      layer** (historical copies may exist only inside the inert
+      `legacy/RADIATION_v3_fbce71b/` archive).
+- [ ] No active v3 executable machinery: no root `scripts/`,
+      `radiation_core/`, root `.github/workflows/`, or relays; archived
+      copies under `legacy/` are nested, unwired, and never executed.
+- [ ] `MIGRATION_ARCHIVE_MANIFEST.json` has exactly 835 entries, every
+      archive file matches its pinned blob SHA-1, exactly the two approved
+      Git-control renames exist, and no unlisted archive file is present.
 
 ## 5. Commander diff review
 

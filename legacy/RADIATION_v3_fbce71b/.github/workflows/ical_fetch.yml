@@ -1,0 +1,36 @@
+# The calendar's timer — COMMITTED-FEED edition (patch 3100).
+# The Commander re-exports the LMS calendar and pushes it to
+# Brain/courses/0_CALLENDER/TERM1_FEED.txt; this workflow regenerates the
+# scrubbed public mirror Brain/courses/CALENDAR.md on every push. No secret,
+# no credential, no cron — HIS push cadence IS the timer (he updates daily).
+name: calendar-mirror
+
+on:
+  push:
+    paths: ["Brain/courses/0_CALLENDER/TERM1_FEED.txt", ".github/workflows/ical_fetch.yml"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calendar-mirror
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate CALENDAR.md from the committed feed
+        run: |
+          [ -f Brain/courses/0_CALLENDER/TERM1_FEED.txt ] || { echo "no feed committed"; exit 0; }
+          python3 scripts/ics_normalize.py --public --no-diff
+      - name: Commit the mirror only if it changed
+        run: |
+          git config user.name  "radiation-calendar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add Brain/courses/CALENDAR.md
+          if git diff --cached --quiet; then echo "mirror unchanged"; exit 0; fi
+          git commit -m "cal: mirror refresh $(date -u +%F)"
+          git push

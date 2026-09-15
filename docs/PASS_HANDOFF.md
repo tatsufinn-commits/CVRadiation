@@ -1,8 +1,9 @@
 # PASS HANDOFF — bounded context card (RADIATION v1.0.0)
 
 **Date:** 2026-09-15 · Plan row **M-012/M-015** — concept rewritten from the
-pinned v3 `agents/_common/radiation_pass.py` docstring (code NOT imported or
-executed).
+pinned v3 `agents/_common/radiation_pass.py` docstring. The old script exists
+only inside the inert archive `legacy/RADIATION_v3_fbce71b/agents/_common/` and
+was never imported or executed (see `docs/LEGACY_BOUNDARY.md`).
 
 # PROVENANCE NOTE
 
@@ -62,8 +63,10 @@ Task requested by Commander: inspect RADIATION@fbce71b read-only; bootstrap;
 Allowed actions:             local authoring; read-only inspection; approved
                              local corpus import (D4) with hash verification
 Stop-lines honoured:         no git init/commit/push; no source-script
-                             execution; zero carrier files; corpus blocked
-                             from any remote until private target confirmed
+                             execution (including legacy/ archive); zero
+                             carrier files in the active layer; visibility is
+                             the Commander's decision (public during
+                             development per directive 2026-09-15)
 Verification steps:          git blob SHA-1 equality (18 verbatim corpus
                              files vs pinned tree); sha256 cross-check (1
                              documented drift: GED103 DOCX); JSON/magic-byte

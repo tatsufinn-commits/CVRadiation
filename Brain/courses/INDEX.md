@@ -21,7 +21,9 @@ registry IDs, and references to collections not carried into v1 were removed.
   · Fri 7.5 · Sat 10.5. **Wednesday and Sunday are clear.**
 - 07:30 starts on Mon, Tue, Thu, Sat.
 - Authoritative timetable: `SCHEDULE.md` / `SCHEDULE.csv` (rooms and sections
-  included by the Commander's decision; private). When a class relocates,
+  included by the Commander's explicit decision; the repository is public
+  during development by Commander decision and the material is personal-study,
+  not redistribution-permitted). When a class relocates,
   update those files — a stale room is worse than no room.
 - `CALENDAR.md` is the term calendar view; `0_CALLENDER/TERM1_FEED.txt` is the
   raw Blackboard export it can be refreshed from (data, not a credential).

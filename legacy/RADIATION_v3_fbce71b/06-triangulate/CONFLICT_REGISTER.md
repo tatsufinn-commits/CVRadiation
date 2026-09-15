@@ -1,0 +1,16 @@
+# ⚔️ CONFLICT REGISTER (`06-triangulate/CONFLICT_REGISTER.md`)
+**⚠️ APPEND-ONLY (II.2). Constitutional basis: I.5** — contradictions logged
+side-by-side, both sources quoted, NEVER resolved by deletion. Resolution only
+via further triangulation or Commander ruling.
+Format: `| date | claim A (source, quote) | claim B (source, quote) | status: OPEN/RESOLVED (how) |`
+
+| Date | Position A | Position B | Status |
+|---|---|---|---|
+| — | *(register empty — system founding)* | — | — |
+| 2026-09-12 | BP 344 IRR ramp gradient = 1:12 (campaign directive seed, P-01/P-04 evidence line) | BP 344 IRR ramp gradient = 1:20 (S003 extraction, Law collection "BP 344 IRR amendments" PDF p.17) | OPEN — statute itself (LawPhil, fetched 2026-09-12) contains no gradient; Sec. 3 delegates values to the IRR; resolution requires a primary IRR fetch. KR-LAW-005 stays PENDING. |
+| 2026-09-12 | Bentley 7 Qualities begin with "Connectivity" (AR173-1P lecture + PLANNING_reviewer A3, [D]-as-taught) | Original begins with "Permeability" (Bentley 1985 Responsive Environments; K-State thesis [R], S003 F-08) | OPEN as terminology record — study-side handled by 05-annotate/ANNOT_F-08 ("know both"); register row preserved per I.5 (annotation ≠ resolution; primary book still RECORDED-NOT-HELD, K-BK-002) |
+| 2026-09-12 | RESOLUTION OF ROW 1 — primary fetched: BP-344 IRR Amendments (Law #8, text-layer) states "Gradient not steeper than 1:20" (Appendix A p.17, Table A.1.1); 1:12 appears only as swimming-pool transfer-space slope (p.72) | Position A (1:12 general gradient) NOT FOUND in the amended IRR — seed value traced to pre-amendment IRR generation | RESOLVED (further triangulation per I.5): amended IRR governs → 1:20 [D]. KR-LAW-005 corrected + locked. Row 1 preserved unedited (II.2). |
+| 2026-09-12 | Row 2 restated under Curriculum Primacy (P-07, staged): curriculum term "Connectivity" is the EXAM answer of record ([D]-as-taught, AR173-1P) | Literature term "Permeability" (Bentley 1985) is the annotation, carried in the reviewer's ⚑ EXAM NOTE + ANNOT_F-08 | OPEN as preserved divergence (I.5) — recommendation resolved (answer curriculum, know origin); S003's direction-of-correction inverted per P-07 §6.2; row 2 unedited |
+| 2026-09-13 | Corroboration of Row-1 resolution (no re-opening): SRC-015 (UN ESCAP/ILO BP 344 + Amended IRR copy) carries ORIGINAL-generation IRR wording ("maximum gradient 1:12") — matches the resolution's genealogy (seed = pre-amendment generation; amended IRR = 1:20, KR-LAW-005 locked) | — | RESOLVED row stands; evidence lineage added via 06-triangulate/TRI_bp344-accessibility_2026-09-13.md |
+| 2026-09-13 | PLANNING_reviewer A5 (line 55) + registry K-LAW-009 cite **PD 1308** as the Environmental Planning profession law ([D]-as-taught / registry row) | **RA 10587** (Environmental Planning Act of 2013) §42 repeals PD 1308; degree requirement added; PD-1308 registrants vested (§24) — [D×3: SRC-017/018/Scribd + SRC-019 [R]] | RESOLVED as annotation (row-2 P-07 pattern): law-of-record = RA 10587 (K-LAW-014 NEW); exam answer-of-record stays as-taught until the Commander rules otherwise — ⚑ EXAM NOTE appended to PLANNING_reviewer; K-LAW-009 marked REPEALED-GENERATION. Card: 09-nota/CARD_002. |
+
