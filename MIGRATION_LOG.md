@@ -145,3 +145,38 @@ byte-exact (`copied-exact`), Drive links included**. The Commander holds the
 final pre-push gate and may still order redaction. A uniquely timestamped zip
 package is produced outside the repository at each phase completion; zip
 files never enter the active layer.
+
+
+### Phase C — public-state verification and reconciliation (2026-09-15)
+
+Observed public history (Commander pushes, read from the remote, not assumed):
+
+| Public commit | Event | Verified result |
+|---|---|---|
+| `8d2dba8` | v1 corpus + migration docs (116-file hybrid) | corpus present; v1 active docs private-era wording |
+| `62d2ad9` | Commander "Reset README for v1 study repo" (parallel, manual) | README returned to earlier private-era text; later superseded |
+| `1dad669` | Commander "Phase B" (additive upload of the Phase B package) | archive present |
+
+Fresh-clone verification at public HEAD `1dad669` (2026-09-15):
+
+- **PASS** — inert archive: 835/835 files byte-exact to pinned source blob
+  SHA-1 and to this manifest's sha256; no omissions/unlisted files; exactly
+  the two approved renames (`DOT_gitignore.archived`,
+  `DOT_gitattributes.archived`).
+- **PASS** — active corpus: 20 manifest entries = 20 files, all sha256 match;
+  18/18 shared files blob-exact to `fbce71b`.
+- **PASS** — root README truthful (public-during-development); required active
+  files present; no root `.github/`; no active-layer code/workflow files.
+- **FAIL → this commit repairs it** — 80 hybrid scaffold paths remained active
+  at root (9 phase dirs, `cue/`, `scaffolding/`, `styles/`, `subskills/`,
+  five Brain lobe regions, `BOOT_SEQUENCE.md`, `PROTOCOL.md`,
+  `VERSIONING_GUIDE.md`, `Brain/BRAIN_INDEX.md`, 12 v3 docs, and `.gitkeep`
+  placeholders). Additive web upload can add files but cannot delete them;
+  all 80 are preserved byte-identical under `legacy/RADIATION_v3_fbce71b/`.
+  This reconciliation deletes only those active-layer copies; it changes no
+  archive content and no corpus byte.
+
+Final reconciled tree: 38 active files + 835 archived files = 873 files.
+Deletions require a Git push (web upload cannot remove tracked files); see
+the Phase C receipt for the Commander's exact commands. The AI performed no
+push.
