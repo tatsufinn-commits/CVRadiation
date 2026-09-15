@@ -1,0 +1,381 @@
+{
+  "schema_name": "radiation.course_corpus.manifest/v1",
+  "created_on": "2026-09-15",
+  "retrieved_by": "on_demand_only",
+  "visibility_gate": {
+    "target_repository": "private RADIATION-v1 (Commander creates, decision D1)",
+    "rule": "no file listed here is pushed until the Commander confirms the remote is PRIVATE (D2); local workspace build does not satisfy the remote gate"
+  },
+  "approval_reference": "CMD-2026-09-15-D4",
+  "asset_count": 20,
+  "assets": [
+    {
+      "path": "Brain/courses/0_CALLENDER/TERM1_FEED.txt",
+      "sha256": "sha256:9b3f614843cc4d12d6b93a9d4b05f6f3fdd85c457558caf7874e89f0c177f9e9",
+      "media_type": "text/plain",
+      "size": 13107,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "94cebd76cbfd5b16c7efef5aedd9761d5e225273",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "data_feed",
+      "privacy": "private personal calendar export (Blackboard)",
+      "secret_scan": {
+        "on": "2026-09-15",
+        "result": "no credential URLs (only public tzurl.org TZ reference); Commander open item P4 concerns a different, historically committed URL"
+      }
+    },
+    {
+      "path": "Brain/courses/0_CALLENDER/readme.txt",
+      "sha256": "sha256:c3994dc1ef183eb8c04779405afa9071c15f2a3511d869275176547f4d7e53c8",
+      "media_type": "text/plain",
+      "size": 56,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "cc5e019cc9ae1ab76595e303bd895849fe6649b6",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "reference_note",
+      "privacy": "private, Commander-authored note"
+    },
+    {
+      "path": "Brain/courses/AR153P.md",
+      "sha256": "sha256:b895cd210b75db5d8d5d56446b0123ca288ba9a2fbfb516a91065954c1aa58b1",
+      "media_type": "text/markdown",
+      "size": 6136,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "416073ffb051706e3761abbee8320196c9676496",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/AR163-1P.md",
+      "sha256": "sha256:df59c7840fd94da952a028fdc98758fdf16dee57ae4760d8ad8464ef38e65757",
+      "media_type": "text/markdown",
+      "size": 7800,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "9333eb1f61333c2febda63cb44166af577e5f04a",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/AR173-1P.md",
+      "sha256": "sha256:43f87568a47a6c8c86fea9de1de0ba1be48ef3dfc2257aa48aadc8f989e005e9",
+      "media_type": "text/markdown",
+      "size": 4708,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "ffb060ba3c28f0855defcf41de4c3390fc291d20",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/AR173-1P_PLANNING_2/AR173-1P (Fundamentals of Urban Design and Community Architecture)-CLASS SCHEDULE.pdf",
+      "sha256": "sha256:e10a43c2f37a9b804f454081248547082a80aa5e074698658daf82a61f4a664f",
+      "media_type": "application/pdf",
+      "size": 1246471,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "e9b231abb898a782da25f7b0e4945f2ea34ad221",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution",
+      "derivative_path": "Brain/courses/AR173-1P.md",
+      "conversion": {
+        "status": "source binary imported with Commander authorization; Markdown derivative mapped above",
+        "verified_on": "2026-09-15",
+        "limitations": "opaque binary content not machine-inspected; magic-byte/format check passed"
+      },
+      "embedded_links_note": "2026-09-15 scan: PDF metadata namespace URLs only; no external hyperlinks found"
+    },
+    {
+      "path": "Brain/courses/CALENDAR.md",
+      "sha256": "sha256:bc13c8e3dafbfa51dea6a4b734c231161f955e2d05a51016dca53612a5a7d7d8",
+      "media_type": "text/markdown",
+      "size": 2654,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "88bcfd544d831d5a64efeff5ec57611565fbe579",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "term_calendar_view",
+      "privacy": "private, derived"
+    },
+    {
+      "path": "Brain/courses/DSS10.md",
+      "sha256": "sha256:fd20ac8fd8b95a56bb30de47c53afb554e8672d210c130aaf173b46fae8b607f",
+      "media_type": "text/markdown",
+      "size": 3858,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "cd770b2544a7e26816aa68666c9accb0f528b000",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/DSS10_INTRODUCTION_TO_DATA_SCIENCE/SOIT_DSS10_1Q_ Syllabus.docx",
+      "sha256": "sha256:99e388eccc2fc804621fa5cc86cacb157924fed5b88e711a0e1392764dda3fd9",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "size": 737298,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "29afdeb63a640e8742daa5d20dd04c4a462e6060",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution",
+      "derivative_path": "Brain/courses/DSS10_INTRODUCTION_TO_DATA_SCIENCE/SOIT_DSS10_1Q_Syllabus.md",
+      "conversion": {
+        "status": "source binary imported with Commander authorization; Markdown derivative mapped above",
+        "verified_on": "2026-09-15",
+        "limitations": "opaque binary content not machine-inspected; magic-byte/format check passed"
+      },
+      "embedded_links_note": "2026-09-15 scan: document-internal XML namespace URLs and the school domain (it.mapua.edu.ph); no credentials/tokens"
+    },
+    {
+      "path": "Brain/courses/DSS10_INTRODUCTION_TO_DATA_SCIENCE/SOIT_DSS10_1Q_Syllabus.md",
+      "sha256": "sha256:dbfe7eeb9704a8be70a0da5d10e8efcd93f9b7efed956e6f0dc0596d8a2ad8bb",
+      "media_type": "text/markdown",
+      "size": 11110,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "b898ec154a213993e83bf4b77044fd4512029dd0",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution"
+    },
+    {
+      "path": "Brain/courses/GED103.md",
+      "sha256": "sha256:e715c93e5f5c5550ab218bb5aa76ffaa41d91f292b4cd301292a5d5d11f164a4",
+      "media_type": "text/markdown",
+      "size": 5037,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "8dff0cb174be0d50b34654d9f20c1f072c2b192d",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/GED103_READINGS_IN_PHILIPPINE_HISTORY/GED103 Syllabus_Q12627.docx",
+      "sha256": "sha256:eae44c07445e48f77aef95d4c78ee40652bca55c0c8141adcb92a061e4c5905a",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "size": 663317,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "e334ab769da48bbb4c6c1682a10e3da7b827f825",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution",
+      "provenance_note": "OLD MANIFEST DRIFT: pinned v3 manifest declared sha256 eae44c07445f2a48f77aef95d4c78ee40652bca55c0c8141adcb92a061e4c5905a; the actual pinned git blob (blob_sha1 verified) has the sha256 above. v1 records the true digest; the old declaration was wrong.",
+      "derivative_path": "Brain/courses/GED103_READINGS_IN_PHILIPPINE_HISTORY/GED103_Syllabus_Q12627.md",
+      "conversion": {
+        "status": "source binary imported with Commander authorization; Markdown derivative mapped above",
+        "verified_on": "2026-09-15",
+        "limitations": "opaque binary content not machine-inspected; magic-byte/format check passed"
+      },
+      "embedded_links_note": "2026-09-15 scan: document-internal XML namespace URLs and the school domain (it.mapua.edu.ph); no credentials/tokens"
+    },
+    {
+      "path": "Brain/courses/GED103_READINGS_IN_PHILIPPINE_HISTORY/GED103_Syllabus_Q12627.md",
+      "sha256": "sha256:e7f713c5fe5f2d1990a4eb283ce0768295c525982daa939daef7b85d67a9c7a0",
+      "media_type": "text/markdown",
+      "size": 31690,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "4493e5fc8010da0753786237a822c31c8b3586d4",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution"
+    },
+    {
+      "path": "Brain/courses/INDEX.md",
+      "sha256": "sha256:a1a864a4db7bb01a1907967ae3fc5a0f3803f28d9621304f1bfc4b31d69fc612",
+      "media_type": "text/markdown",
+      "size": 2448,
+      "load_policy": "on_demand_only",
+      "role": "course_register",
+      "privacy": "private (Commander study register)",
+      "source": {
+        "kind": "v1 handwritten rewrite (M-016 of pinned INDEX @ ddc603ce\u2026)",
+        "created_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D3/D4"
+      }
+    },
+    {
+      "path": "Brain/courses/MEC30-7.md",
+      "sha256": "sha256:134edd8c971fdb296e107a39112ed756307085cf704275c9c34fdd062fec932c",
+      "media_type": "text/markdown",
+      "size": 4072,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "66a462014b83e32aac1722d051731952f92c7c87",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "study_digest",
+      "privacy": "private study notes"
+    },
+    {
+      "path": "Brain/courses/MEC30-7_STATICS_OF_RIGID_BODIES_FOR_CE/MEC30-7 Course Calendar 1Q.html",
+      "sha256": "sha256:495da86995575418f4dd51b67c9e8a2e934c6fdf3bf482b277dc9afeada76af1",
+      "media_type": "text/html",
+      "size": 146558,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "66f837c087acfbd322c4a516f3589d6e97f38c60",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution",
+      "derivative_path": "Brain/courses/MEC30-7_STATICS_OF_RIGID_BODIES_FOR_CE/MEC30-7_Course_Calendar.md",
+      "conversion": {
+        "status": "source binary imported with Commander authorization; Markdown derivative mapped above",
+        "verified_on": "2026-09-15",
+        "limitations": "opaque binary content not machine-inspected; magic-byte/format check passed"
+      },
+      "external_resources_note": "2026-09-15 scan: static exported HTML; 2 <script> tags incl. one CDN reference (cdn.jsdelivr.net mathjax@3), no iframes/trackers; bootstrap credit links present; opens no network action unless rendered in a browser; stored on demand only"
+    },
+    {
+      "path": "Brain/courses/MEC30-7_STATICS_OF_RIGID_BODIES_FOR_CE/MEC30-7_Course_Calendar.md",
+      "sha256": "sha256:c21aea5aae4f5a8569b675dfd0a13327c7ccda22145c662a27b5c597873561ce",
+      "media_type": "text/markdown",
+      "size": 1088,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "87be883a25cf0949625868197ed26c0f805585db",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_asset",
+      "privacy": "private \u2014 third-party school material, Commander storage authorization CMD-2026-09-15-D4; personal study only, no redistribution"
+    },
+    {
+      "path": "Brain/courses/README.md",
+      "sha256": "sha256:a59a8672771c3d406c156ee77eaa7c4f60698974e1f70359ab298cb9b81af2b2",
+      "media_type": "text/markdown",
+      "size": 2099,
+      "load_policy": "on_demand_only",
+      "role": "corpus_rules",
+      "privacy": "private (v1 governance note)",
+      "source": {
+        "kind": "v1 handwritten rewrite (M-013 of pinned COURSE_CORPUS_POLICY @ 6c9f4c4b\u2026)",
+        "created_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D3/D4"
+      }
+    },
+    {
+      "path": "Brain/courses/SCHEDULE.csv",
+      "sha256": "sha256:3e1afa3672159f744f8f5a52c4f0d32fb1f0927bcc602d7b4d370122a5107618",
+      "media_type": "text/csv",
+      "size": 746,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "9af9a3b8f19122a8dcb12ce348fce731867612b1",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "source_of_readable_derivative",
+      "privacy": "private personal timetable",
+      "derivative_path": "Brain/courses/SCHEDULE.md"
+    },
+    {
+      "path": "Brain/courses/SCHEDULE.md",
+      "sha256": "sha256:959bb294de869968743c30cb180d546dc1c173beea4d96a1a7644d629a471560",
+      "media_type": "text/markdown",
+      "size": 4682,
+      "load_policy": "on_demand_only",
+      "source": {
+        "repository": "https://github.com/tatsufinn-commits/RADIATION.git",
+        "commit": "fbce71bbfe4c62da71e6b347d36617474f840297",
+        "blob_sha1": "47d5848bbe3b22dec9b6b339a359be7056441446",
+        "imported_on": "2026-09-15",
+        "approval": "CMD-2026-09-15-D4",
+        "integrity": "git blob SHA-1 equal to pinned tree"
+      },
+      "role": "readable_derivative",
+      "privacy": "private personal timetable"
+    }
+  ]
+}
