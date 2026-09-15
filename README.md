@@ -1,76 +1,72 @@
-# ☢️ RADIATION
-### A Research & Answer-Oriented Operating System for Artificial Intelligence
-**Version 1.0.0** · Ratified by THE COMMANDER · 2026-09-12
+# RADIATION v1.0.0
 
-> **R**esearch · **A**nalyze · **D**ossier · **I**ncubate · **A**nnotate · **T**riangulate · **I**nspect · **O**verhaul · **N**ota
+**A clean-line, private, study-first repository.**
 
-RADIATION is a domain-agnostic, copy-pastable repository that turns any capable
-AI into a disciplined research engine. The repository IS the AI's operating
-system: its constitution, skills, modes, memory, formats, and intent-reading
-protocol all live in these files. Its SOLE task: **research, provide, and answer**
-— with zero hallucination, evidence-graded claims, and triangulated verification.
+> - **RADIATION v1.0.0 is a clean-line, private, study-first repository.**
+> - **The old RADIATION v3 repository is a read-only reference, not an automatic import source.**
+> - **No provider/model claim grants runtime access or authority.**
+> - **The Commander approves material imports and performs pushes.**
 
----
+RADIATION v1 is a small personal study assistant, started clean at v1.0.0. It
+is not a copy of the old v3 system and does not claim that v3 content was all
+correct. It contains four things:
 
-## ⚡ Quickstart (the magic words)
+1. **A provider-facing index** (`agents/`) — one folder per supported AI
+   runtime, with an honest routing rule and placeholder profiles.
+2. **A bounded PASS handoff** (`docs/PASS_HANDOFF.md`) — a context card that
+   states available context, tools, task boundary, stop-lines, and verification
+   steps. It grants no access or authority.
+3. **A private study corpus** (`Brain/courses/`) — the Commander's enrolled
+   courses, schedules, and syllabus materials, imported item-by-item under a
+   hash-and-permission manifest.
+4. **Migration provenance** (`MIGRATION_SOURCES.md`, `MIGRATION_PLAN.md`,
+   `MIGRATION_LOG.md`) — exactly where everything came from and who approved it.
 
-Paste this into any AI chat:
+## Quickstart (magic words, v1)
+
+Paste into an AI runtime that already has the repository open:
 
 ```text
-Read this repository, and act as per .readme
-Repository: https://github.com/tatsufinn-commits/RADIATION.git
-
-@[MODE] | STYLE: [style or AUTO] | TOPIC: [your task]
+Read this repository, and act as per docs/.readme
+Task: [your study task]
 ```
 
-No mode declared? The AI runs the **Autonomous Scan** and infers your intent —
-asking, never guessing, when uncertain.
+A repository text file cannot make a hosted AI browse, select, or obey folders.
+If the runtime cannot see this repository, the magic words do nothing — that is
+expected, not a bug.
 
-## 🎛️ The Four Modes
-| Mode | Purpose |
-|---|---|
-| **@Radiation** | Full-spectrum: all 9 skills, maximum rigor, permanent canonical knowledge |
-| **@Data** | Rapid source-accurate answers to questions/quizzes (sources verified, not listed) |
-| **@Gather** | Information acquisition: min 10 primary + 18 secondary sources, no conclusions |
-| **@Decode** | GitHub repository comprehension: architecture, infrastructure, concepts |
+## Layout
 
-## 📂 Repository Layout
 ```text
-RADIATION/
-├── README.md               # You are here (human-facing)
-├── PROTOCOL.md             # Canonical system definition
-├── BOOT_SEQUENCE.md        # Tiered mandatory load order for AI sessions
-├── VERSIONING_GUIDE.md     # MAJOR.MINOR.PATCH release rules
+RADIATION-v1/
+├── README.md                 # you are here
+├── VERSION                   # exactly: v1.0.0
+├── MIGRATION_SOURCES.md      # what was inspected, what was excluded
+├── MIGRATION_PLAN.md         # row-by-row migration decisions (63 M-IDs)
+├── MIGRATION_LOG.md          # import ledger: source, hash, reason, privacy, approval
+├── agents/                   # provider-facing index
+│   ├── INDEX.md
+│   ├── ChatGPT/README.md · Gemini/README.md · Grok/README.md
+│   ├── Claude/README.md · Arena_AI/README.md
 ├── docs/
-│   ├── .readme             # 🚪 THE AI ENTRY GATE (the magic words point here)
-│   ├── AI_RULES.md         # ⚖️ THE CONSTITUTION — 4 Books, cited Book.Law
-│   ├── SKILLS.md           # The nine skills
-│   ├── MODES.md            # Mode charters + Activation Matrix
-│   ├── CUE_SYSTEM.md       # The five-phase Autonomous Scan
-│   ├── STOCKPILE_DOCTRINE.md · EVIDENCE_TAXONOMY.md
-│   ├── PROMPT_PLAYBOOK.md  # Copy-paste instances per mode
-│   ├── PATCH_PROTOCOL.md   # How the system evolves (Commander-applied Patches)
-│   └── PATCH_LEDGER.md · DECAY_REGISTER.md · SYSTEM_STATE.md
-├── cue/                    # ☄️ Intent-reading: heuristics, commander-lexicon, inference log
-├── styles/                 # 🦴 10 deliverable skeletons ([MANDATORY]/[FLEX] sections)
-├── scaffolding/            # 🏗️ Process rigor: core/ · generated/ · improved/
-├── subskills/              # 🧩 Passives (surgeon, sentinel, compass, curator) + actives (scout, colony)
-├── Brain/                  # 🧠 Memory: short_term · long_term · subsidiary · cerebellum · frontal_lobe
-├── 01-research/ … 09-nota/ # The nine skill jurisdictions (09 = ☢️ the Core)
+│   ├── .readme               # AI entry gate
+│   ├── PROJECT_SCOPE.md      # what v1 is and is not
+│   ├── PASS_HANDOFF.md       # bounded context-handoff card
+│   └── RELEASE_CHECKLIST.md  # the only release process v1 has
+└── Brain/courses/            # PRIVATE study corpus + COURSE_CORPUS_MANIFEST.json
 ```
 
-## ⚖️ The Iron Principles
-1. **Zero-Contamination** — no uncited claims; hallucination is quarantined, never tolerated.
-2. **Everything graded** — `[D][O][I][R][N][S]` evidence taxonomy on every claim.
-3. **Triangulation is the only elevator** — nothing enters the Core or long-term memory without 2+ independent sources.
-4. **The AI never modifies this repo** — durable changes ship as Patch proposals that only the Commander applies.
-5. **The Commander outranks everything.** AIs advise; the Commander decides.
+## Authority model
 
-## 🧬 Lineage
-Third pillar of an ecosystem: **TAMAKEE** (academic vault — epistemic rigor DNA)
-and **Marciale-OS** (multi-agent build system — constitutional discipline DNA).
-RADIATION deliberately rejects multi-agent governance: one superior AI, nine
-skills, the Commander's word.
+- The Commander (repository owner) approves material scope changes, imports,
+  and every push. The AI drafts and verifies; it does not commit, push, invite
+  collaborators, deploy, route, call providers with credentials, or upload
+  material without an explicit, task-bound order.
+- Silence, praise, a prior session, or "we are not done yet" is never standing
+  approval.
+- Claims about providers, policies, models, privacy, or security carry a dated
+  source for the relevant surface, or are labelled **not yet verified**.
+- Study material lives only in the private repository. No corpus file is
+  republished.
 
----
-*Built under Blueprint v5.0. Designed with peer review. Evolves by Patch.*
+Version v1.0.0 means "clean baseline", not "all old features reimplemented".
